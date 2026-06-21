@@ -1,0 +1,53 @@
+# Sample fleet inventory for the eve example. All values are fictional.
+#
+# Field reference:
+#   name          hostname
+#   old_name      previous display name; null if none
+#   tailscale_ip  WireGuard/Tailscale IPv4 (100.64.0.0/10 CGNAT range)
+#   platform      OS + version
+#   lan_ip        LAN IPv4 (RFC 5737 documentation range) or null
+#   role          short purpose
+#   status        config status text with emoji
+#   latency       typical latency string or null
+#   notes         free-form detail
+
+hosts:
+  - name: web-01
+    old_name: edge-sg
+    tailscale_ip: 100.64.1.10
+    platform: Linux (Ubuntu 24.04)
+    lan_ip: 192.0.2.10
+    role: Web service / Exit Node
+    status: ✅ fully configured + cron ping
+    latency: ~110ms
+    notes: Exit Node; keep-alive + cron ping; passwordless sudo; monitoring script; reverse proxy via tunnel (web-01.example.com).
+
+  - name: gpu-01
+    old_name: null
+    tailscale_ip: 100.64.1.20
+    platform: Linux (Ubuntu 22.04)
+    lan_ip: 192.0.2.20
+    role: GPU compute
+    status: ✅ fully configured + iptables tuned
+    latency: ~5ms ⚡
+    notes: 4x data-center GPUs; iptables tuned for direct connection; passwordless sudo; nvidia driver pinned.
+
+  - name: ws-01
+    old_name: workstation
+    tailscale_ip: 100.64.1.30
+    platform: Linux (Ubuntu 24.04)
+    lan_ip: null
+    role: Workstation
+    status: ✅ fully configured
+    latency: null
+    notes: Local LLM host; serves an Anthropic-compatible inference endpoint on the tailnet; Docker without sudo.
+
+  - name: db-01
+    old_name: null
+    tailscale_ip: 100.64.1.40
+    platform: Linux (Debian 12)
+    lan_ip: 192.0.2.40
+    role: Database
+    status: ⚠️ needs backup verification
+    latency: ~12ms
+    notes: Primary Postgres; nightly dumps to object storage; backup restore not verified this quarter.
