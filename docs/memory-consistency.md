@@ -2,6 +2,10 @@
 
 > **中文版:** [memory-consistency.zh-CN.md](./memory-consistency.zh-CN.md)
 >
+> **Industry survey:** [memory-consistency-landscape.md](./memory-consistency-landscape.md)
+> — how Mem0, Zep/Graphiti, Letta, LangMem, A-MEM and the academic foundations
+> address the problem this document defines.
+>
 > **Status:** problem definition. This document defines a problem; it does **not**
 > prescribe a solution. It motivates a future `03` example.
 >

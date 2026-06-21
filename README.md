@@ -21,6 +21,10 @@ _More to come._
   ([中文](./docs/memory-consistency.zh-CN.md)) — a problem definition (belief
   revision / stale-fact invalidation) that motivates a future `03` example.
   Defines the gap left open by `02`.
+- [How the industry handles memory consistency](./docs/memory-consistency-landscape.md)
+  ([中文](./docs/memory-consistency-landscape.zh-CN.md)) — a landscape review of
+  Mem0, Zep/Graphiti, Letta, LangMem, A-MEM and the academic foundations, with a
+  capability matrix and recommendations for a reconciliation step.
 
 ## Prerequisites
 

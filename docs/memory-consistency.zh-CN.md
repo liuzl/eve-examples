@@ -2,6 +2,9 @@
 
 > **English version:** [memory-consistency.md](./memory-consistency.md)
 >
+> **行业调研:** [memory-consistency-landscape.zh-CN.md](./memory-consistency-landscape.zh-CN.md)
+> —— Mem0、Zep/Graphiti、Letta、LangMem、A-MEM 及学术基础如何应对本文定义的问题。
+>
 > **状态:** 问题定义。本文只**定义问题**,**不规定解决方案**,用于引出未来的 `03` 例子。
 >
 > **背景:** 例子 [`02-self-evolving-memory`](../02-self-evolving-memory) 给 agent
