@@ -15,6 +15,13 @@ concepts at a time. Start at `01` and work up.
 
 _More to come._
 
+## Design notes
+
+- [Memory consistency in agent long-term memory](./docs/memory-consistency.md)
+  ([中文](./docs/memory-consistency.zh-CN.md)) — a problem definition (belief
+  revision / stale-fact invalidation) that motivates a future `03` example.
+  Defines the gap left open by `02`.
+
 ## Prerequisites
 
 - **Node 24+** (eve requires it).
