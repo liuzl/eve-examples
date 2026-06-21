@@ -11,6 +11,7 @@ concepts at a time. Start at `01` and work up.
 | # | Example | What it covers |
 |---|---------|----------------|
 | 01 | [oplog-host-cards](./01-oplog-host-cards) | Agent directory layout, typed tools, a custom/self-hosted model, the web UI as an eve-channel client, and rendering tool output as UI cards. |
+| 02 | [self-evolving-memory](./02-self-evolving-memory) | A "self-evolving" agent: long-term memory, human-in-the-loop approval (`needsApproval`), and dynamic instructions that inject what was learned into each new session. |
 
 _More to come._
 
